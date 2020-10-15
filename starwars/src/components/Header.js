@@ -4,10 +4,10 @@ function Header() {
     return (
         <header id="header">
             <div className="inner">
-                {/*<Link to="/" className="logo">Capa </Link>*/}
+                <Link to="/" className="logo"><p className="navbar-brand logo_h"><img src={require("../images/logo.png")} alt=""/></p> </Link>
                 <nav id="nav">
                     <Link to="/">HOME</Link>
-                    <Link to="/produtos">FILMS</Link>
+                    <Link to="/films">FILMS</Link>
                     <Link to="/starships">STARSHIPS</Link>
                     <Link to="/people">PEOPLE</Link>
                     <Link to="/planets">PLANETS</Link>
