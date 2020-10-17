@@ -9,14 +9,11 @@ import People from './pages/People'
 import Starships from './pages/Starships'
 import Species from './pages/Species'
 import Planets from './pages/Planets'
+import Login from './pages/Login'
 
 import { HashRouter, Switch, Route } from 'react-router-dom'
 
 function App() {
-
-
-
-
 
   return (
     <>
@@ -29,6 +26,7 @@ function App() {
           <Route path="/species" component={Species} />
           <Route path="/starships" component={Starships} />
           <Route path="/planets" component={Planets} />
+          <Route path="/login" component={Login} />
         </Switch>
       </HashRouter>
       <Footer />
