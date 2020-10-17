@@ -4,15 +4,15 @@ function Header() {
     return (
         <header id="header">
             <div className="inner">
-                <Link to="/" className="logo"><p className="navbar-brand logo_h"><img src={require("../images/logo.png")} alt=""/></p> </Link>
-                <nav id="nav">
-                    <Link to="/">HOME</Link>
-                    <Link to="/films">FILMS</Link>
-                    <Link to="/starships">STARSHIPS</Link>
-                    <Link to="/people">PEOPLE</Link>
-                    <Link to="/planets">PLANETS</Link>
-                    <Link to="/species">SPECIES</Link>
-                    <Link to="/login">LOGIN</Link>
+                
+                <nav id="nav" className="fonteStarWars">
+                    <Link to="/" className="cabecalho">HOME</Link>
+                    <Link to="/films" className="cabecalho">FILMS</Link>
+                    <Link to="/starships" className="cabecalho">STARSHIPS</Link>
+                    <Link to="/people" className="cabecalho">PEOPLE</Link>
+                    <Link to="/planets" className="cabecalho">PLANETS</Link>
+                    <Link to="/species" className="cabecalho">SPECIES</Link>
+                    <Link to="/login" className="cabecalho">LOGIN</Link>
                 </nav>
                 <a href="#navPanel" className="navPanelToggle"><span className="fa fa-bars"></span></a>
             </div>

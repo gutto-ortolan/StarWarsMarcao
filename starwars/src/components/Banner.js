@@ -4,8 +4,8 @@ export default function Banner(props) {
 
     return (
         <section id="banner">
-            <h1>{props.titulo}</h1>
-            <p>{props.mensagem}</p>
+            <h1 ><span className="fonteStarWars">{props.titulo}</span></h1>
+            <p className="fonteStarWars subtitulo"><span className="fonteStarWars">{props.mensagem}</span></p>
         </section>
     )
 }

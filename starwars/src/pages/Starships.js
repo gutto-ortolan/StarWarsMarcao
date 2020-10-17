@@ -9,10 +9,8 @@ export default function Home() {
 
     const [films, setFilms] = useState([])
 
-    const urlBase = `https://swapi.dev/api/`;
-
     const getFilms = () => {
-        requisicoes.getDados('films/')
+        requisicoes.getDados('starships/')
         .then(result => setFilms(result))
         
     }
@@ -28,18 +26,18 @@ export default function Home() {
             <section id="three" className="wrapper special">
                 <div className="inner align-center">
                     <header className="align-center">
-                        <h2>Filmes</h2>
-                        <p>Visualize os filmes da série de Star Wars</p>
+                        <h2>Naves</h2>
+                        <p>Visualize as naves da série de Star Wars</p>
                     </header>
                     <div className="flex flex-2">
                         {
                             films.map((item, chave) =>
                                 <Card style={{ width: '22rem' }} className="box">
                                     <Card.Body>
-                                        <Card.Title>{item.title}</Card.Title>
-                                        <Card.Subtitle className="mb-2 text-muted">Episode {item.episode_id}</Card.Subtitle>
-                                        <Card.Text className="justificarTexto">
-                                            {item.opening_crawl}
+                                        <Card.Title>{item.name}</Card.Title>
+                                        <Card.Subtitle className="mb-2 text-muted">Modelo {item.model }</Card.Subtitle>
+                                        <Card.Text>
+                                            {item.starship_class }
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>

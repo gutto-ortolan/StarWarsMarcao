@@ -3065,3 +3065,72 @@
 		}
 
 	}
+
+
+	/*CLASSES CRIADAS*/
+
+	.centralizador{
+		display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center
+	}
+
+	.fonteStarWars{
+		color: white;
+		font-family: StarWarsFont;
+		text-shadow: -4px -1px 2px rgba(0, 0, 0, 1);
+	}
+
+	.justificarTexto{
+		text-align: justify;
+	}
+
+	.cabecalho{
+		font-size: 15px !important;
+	}
+
+	.cabecalho:hover {
+		color: #676767 !important;
+	}
+
+	.subtitulo{
+		font-size: 30px !important;
+	}
+
+	.footer_area {
+		background: rgb(0 8 37);
+	  }
+
+	  .p_120 {
+		padding-top: 120px;
+		padding-bottom: 120px; }
+
+		.f_title {
+			color: #fff;
+		  }
+
+		  .row {
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			margin-right: -15px;
+			margin-left: -15px
+		}
+
+		.icones{
+			margin: 0px 10px 10px 0;
+			cursor: pointer;
+			outline: none;
+			color: black;
+		}
+
+
+
+	/*FONTES ADICIONADAS*/
+
+	@font-face {
+		font-family: 'StarWarsFont';
+		src: local('MyFStarWarsFontont'), url(../fonts/Starjedi.ttf) format('ttf');
+	  }

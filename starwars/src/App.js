@@ -4,20 +4,33 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 import Home from './pages/Home'
-import Produtos from './pages/Films'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Films from './pages/Films'
+import People from './pages/People'
+import Starships from './pages/Starships'
+import Species from './pages/Species'
+import Planets from './pages/Planets'
+
+import { HashRouter, Switch, Route } from 'react-router-dom'
 
 function App() {
 
+
+
+
+
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <Switch>
           <Route path="/" exact={true} component={Home} />
-          <Route path="/films" component={Produtos} />
+          <Route path="/films" component={Films} />
+          <Route path="/people" component={People} />
+          <Route path="/species" component={Species} />
+          <Route path="/starships" component={Starships} />
+          <Route path="/planets" component={Planets} />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </>
   );
