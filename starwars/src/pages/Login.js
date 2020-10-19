@@ -1,10 +1,13 @@
 import React from "react";
 import { Button, Form, Card } from "react-bootstrap";
+import Banner from '../components/Banner';
 
 export default function Login() {
   return (
     <>
-      <section id="three" className="wrapper special login-page">
+
+      <Banner titulo="Star Wars Cinematic Universe" mensagem="Um portal web para os fãs de Star Wars" />  
+      <section id="three" className="wrapper special">
         <div className="inner login-center">
           <Card style={{ width: "50%" }} className="box">
             <Form>
