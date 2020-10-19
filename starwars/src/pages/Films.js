@@ -9,6 +9,8 @@ export default function Home() {
 
     const [films, setFilms] = useState([])
 
+    var dateFormat = require('dateformat');
+
     const urlBase = `https://swapi.dev/api/`;
 
     const getFilms = () => {
@@ -31,16 +33,17 @@ export default function Home() {
                         <h2>Filmes</h2>
                         <p>Visualize os filmes da série de Star Wars</p>
                     </header>
-                    <div className="flex flex-2">
+                    <div className="flex flex-2 ">
                         {
                             films.map((item, chave) =>
                                 <Card style={{ width: '22rem' }} className="box">
                                     <Card.Body>
                                         <Card.Title>{item.title}</Card.Title>
-                                        <Card.Subtitle className="mb-2 text-muted">Episode {item.episode_id}</Card.Subtitle>
-                                        <Card.Text className="justificarTexto">
-                                            {item.opening_crawl}
-                                        </Card.Text>
+                                        <Card.Subtitle className="mb-2 text-muted">Episódio {item.episode_id}</Card.Subtitle>
+                                        <Card.Text className="justificarTexto">{item.opening_crawl}</Card.Text>
+                                        <Card.Text className="alinharEsquerda"><b>Diretor:</b> {item.director}</Card.Text>
+                                        <Card.Text className="alinharEsquerda"><b>Data:</b> {dateFormat(item.release_date, "dd/mm/yyyy")}</Card.Text>
+                                        <Card.Text className="alinharEsquerda"><b>Produzido por: </b>{item.producer}</Card.Text>
                                     </Card.Body>
                                 </Card>
                             )

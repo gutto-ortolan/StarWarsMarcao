@@ -3086,6 +3086,10 @@
 		text-align: justify;
 	}
 
+	.alinharEsquerda{
+		text-align: left;
+	}
+
 	.cabecalho{
 		font-size: 15px !important;
 	}

@@ -10,22 +10,19 @@ export default function Login() {
                 <Card style={{width: '50%'}}className="box">
                     <Form>
                         <Form.Group controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email"/>
+                            <Form.Label>Email</Form.Label>
+                            <Form.Control type="email" placeholder="Email"/>
                             <Form.Text className="text-muted">
-                                We'll never share your email with anyone else.
+                                Não passe as suas credenciais para mais ninguém.
                             </Form.Text>
                         </Form.Group>
 
                         <Form.Group controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Password"/>
-                        </Form.Group>
-                        <Form.Group controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="Check me out"/>
+                            <Form.Label>Senha</Form.Label>
+                            <Form.Control type="password" placeholder="Senha"/>
                         </Form.Group>
                         <Button variant="primary" type="submit">
-                            Submit
+                            Entrar
                         </Button>
                     </Form>
                 </Card>

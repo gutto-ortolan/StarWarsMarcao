@@ -9,6 +9,8 @@ export default function Home() {
 
     const [films, setFilms] = useState([])
 
+    var dateFormat = require('dateformat');
+
     const getFilms = () => {
         requisicoes.getDados('people/')
         .then(result => setFilms(result))
@@ -34,11 +36,10 @@ export default function Home() {
                             films.map((item, chave) =>
                                 <Card style={{ width: '22rem' }} className="box">
                                     <Card.Body>
-                                        <Card.Title>{item.name }</Card.Title>
-                                        <Card.Subtitle className="mb-2 text-muted">Nascimento {item.birth_year}</Card.Subtitle>
-                                        <Card.Text>
-                                            {item.gender}
-                                        </Card.Text>
+                                        <Card.Title>{item.name}</Card.Title>
+                                        <Card.Text className="alinharEsquerda"><b>Gênero: </b>{item.gender}</Card.Text>
+                                        <Card.Text className="alinharEsquerda"><b>Nascimento: </b>{item.birth_year }</Card.Text>
+                                        <Card.Text className="alinharEsquerda"><b>Altura: </b>{item.height} centímetros</Card.Text>
                                     </Card.Body>
                                 </Card>
                             )

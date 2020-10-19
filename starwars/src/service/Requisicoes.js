@@ -11,4 +11,9 @@ export default class Requisicoes{
         return result.data.results
     }
 
+    async getUnicoDado(urlInteira){
+        const result = await axios.get(urlInteira)
+        return result.data.results
+    }
+
 }

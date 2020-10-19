@@ -34,11 +34,13 @@ export default function Home() {
                             films.map((item, chave) =>
                                 <Card style={{ width: '22rem' }} className="box">
                                     <Card.Body>
-                                        <Card.Title>{item.name}</Card.Title>
-                                        <Card.Subtitle className="mb-2 text-muted">População {item.population}</Card.Subtitle>
-                                        <Card.Text>
-                                            {item.climate}
-                                        </Card.Text>
+                                    <Card.Title>{item.name}</Card.Title>
+                                        <Card.Text className="alinharEsquerda"><b>População: </b>{item.population }</Card.Text>
+                                        <Card.Text className="alinharEsquerda"><b>Clima: </b>{item.climate  }</Card.Text>
+                                        <Card.Text className="alinharEsquerda"><b>Diâmetro: </b>{item.diameter } quilômetros</Card.Text>
+                                        <Card.Text className="alinharEsquerda"><b>Gravidade: </b>{item.gravity  }</Card.Text>
+                                        <Card.Text className="alinharEsquerda"><b>Período Orbital: </b>{item.orbital_period   } standard days</Card.Text>
+                                        <Card.Text className="alinharEsquerda"><b>Período Rotacional: </b>{item.rotation_period  } standard days</Card.Text>
                                     </Card.Body>
                                 </Card>
                             )
