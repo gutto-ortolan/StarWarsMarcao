@@ -11,7 +11,7 @@ function Header() {
                     <Link to="/starships" className="cabecalho">NAVES</Link>
                     <Link to="/people" className="cabecalho">PERSONAGENS</Link>
                     <Link to="/planets" className="cabecalho">PLANETAS</Link>
-                    <Link to="/species" className="cabecalho">SPÉCIES</Link>
+                    <Link to="/species" className="cabecalho">ESPÉCIES</Link>
                     <Link to="/login" className="cabecalho">LOGIN</Link>
                 </nav>
                 <a href="#navPanel" className="navPanelToggle"><span className="fa fa-bars"></span></a>
