@@ -29,11 +29,9 @@ export default function Home() {
                                 <Card.Body>
                                     <Card.Title>Augusto Ortolan</Card.Title>
                                     <Card.Text>
-                                        <b>RA:
-                                        </b>117993
+                                        <b>RA: </b>117993
                                         <br/>
-                                        <b>E-mail:
-                                        </b>augustoortolan02@gmail.com
+                                        <b>E-mail: </b>augustoortolan02@gmail.com
                                     </Card.Text>
                                 </Card.Body>
                                 <div>
@@ -55,11 +53,9 @@ export default function Home() {
                                 <Card.Body>
                                     <Card.Title>Bruno Santos</Card.Title>
                                     <Card.Text>
-                                        <b>RA:
-                                        </b>1118599
+                                        <b>RA: </b>1118599
                                         <br/>
-                                        <b>E-mail:
-                                        </b>brunosantttos@gmail.com
+                                        <b>E-mail: </b>brunosantttos@gmail.com
                                     </Card.Text>
                                 </Card.Body>
                                 <div>

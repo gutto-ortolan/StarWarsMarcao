@@ -34,7 +34,7 @@ export default function Home() {
                             films.map((item, chave) =>
                                 <Card style={{ width: '22rem' }} className="box">
                                     <Card.Body>
-                                    <Card.Title>{item.name}</Card.Title>
+                                        <Card.Title>{item.name}</Card.Title>
                                         <Card.Text className="alinharEsquerda"><b>População: </b>{item.population }</Card.Text>
                                         <Card.Text className="alinharEsquerda"><b>Clima: </b>{item.climate  }</Card.Text>
                                         <Card.Text className="alinharEsquerda"><b>Diâmetro: </b>{item.diameter } quilômetros</Card.Text>

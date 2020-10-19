@@ -35,10 +35,11 @@ export default function Home() {
                                 <Card style={{ width: '22rem' }} className="box">
                                     <Card.Body>
                                         <Card.Title>{item.name}</Card.Title>
-                                        <Card.Subtitle className="mb-2 text-muted">Classificação {item.classification }</Card.Subtitle>
-                                        <Card.Text>
-                                            {item.designation }
-                                        </Card.Text>
+                                        <Card.Text className="alinharEsquerda"><b>Classificação: </b>{item.classification  }</Card.Text>
+                                        <Card.Text className="alinharEsquerda"><b>Designação: </b>{item.designation   }</Card.Text>
+                                        <Card.Text className="alinharEsquerda"><b>Altura: </b>{item.average_height  } centímetros</Card.Text>
+                                        <Card.Text className="alinharEsquerda"><b>Idioma: </b>{item.language   }</Card.Text>
+                                        <Card.Text className="alinharEsquerda"><b>Média de vida: </b>{item.average_lifespan    } standard days</Card.Text>
                                     </Card.Body>
                                 </Card>
                             )
