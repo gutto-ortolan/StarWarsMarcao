@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect, useEffect } from 'react'
+import React, { useState, useLayoutEffect} from 'react'
 import Banner from '../components/Banner'
 import { Card } from 'react-bootstrap'
 import Requisicoes from '../service/Requisicoes'
@@ -26,15 +26,15 @@ export default function Home() {
             <section id="three" className="wrapper special">
                 <div className="inner align-center">
                     <header className="align-center">
-                        <h2>Naves</h2>
-                        <p>Visualize as naves da série de Star Wars</p>
+                        <h2 className="fonteStarWarsEscritas">Naves</h2>
+                        <p className="fonteStarWarsEscritas">Visualize as naves da série de Star Wars</p>
                     </header>
                     <div className="flex flex-2">
                         {
                             films.map((item, chave) =>
                                 <Card style={{ width: '22rem' }} className="box">
                                     <Card.Body>
-                                        <Card.Title>{item.name}</Card.Title>
+                                        <Card.Title><b>{item.name}</b></Card.Title>
                                         <Card.Text className="alinharEsquerda"><b>Modelo: </b>{item.model}</Card.Text>
                                         <Card.Text className="alinharEsquerda"><b>Classe: </b>{item.starship_class}</Card.Text>
                                         <Card.Text className="alinharEsquerda"><b>Comprimento: </b>{item.length}</Card.Text>

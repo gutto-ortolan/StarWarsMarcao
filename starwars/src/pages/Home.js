@@ -12,8 +12,8 @@ export default function Home() {
             <section id="three" className="wrapper special">
                 <div className="inner">
                     <header className="align-center">
-                        <h2>Desenvolvedores</h2>
-                        <p>Informações sobre os desenvolvedores do website</p>
+                        <h2 className="fonteStarWarsEscritas">Desenvolvedores</h2>
+                        <p className="fonteStarWarsEscritas">Informações sobre os desenvolvedores do website</p>
                     </header>
 
                     <Row className="centralizador">
