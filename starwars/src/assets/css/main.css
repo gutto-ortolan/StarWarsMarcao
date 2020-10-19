@@ -3066,8 +3066,9 @@
 
 	}
 
+	
 
-	/*CLASSES CRIADAS*/
+/*CLASSES CRIADAS*/
 
 	.centralizador{
 		display: flex;
@@ -3109,46 +3110,45 @@
 
 	.footer_area {
 		background: rgb(0 8 37);
-	  }
+	}
 
-	  .p_120 {
+	.p_120 {
 		padding-top: 120px;
-		padding-bottom: 120px; }
+		padding-bottom: 120px; 
+	}
 
-		.f_title {
-			color: #fff;
-		  }
+	.f_title {
+		color: #fff;
+	}
 
-		  .row {
-			display: -ms-flexbox;
-			display: flex;
-			-ms-flex-wrap: wrap;
-			flex-wrap: wrap;
-			margin-right: -15px;
-			margin-left: -15px
-		}
+	.row {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin-right: -15px;
+		margin-left: -15px
+	}
 
-		.icones{
+	.icones{
 			margin: 0px 10px 10px 0;
 			cursor: pointer;
 			outline: none;
 			color: black;
-		}
+	}
 
-		.login-page{
-			width: 100%;
-        	height: 100vh;
-			background-image: url('../../images/banner.png');
-			opacity: 70%;
-		}
+	.login-page{
+		width: 100%;
+		height: 100vh;
+		background-image: url('../../images/banner.png');
+		opacity: 70%;
+	}
 
-		.login-center{
-			position: relative;
-			top: 25%;
-			transform: translate(25%);
-		}
-
-
+	.login-center{
+		position: relative;
+		top: 25%;
+		transform: translate(25%);
+	}
 
 
 
